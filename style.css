@@ -1,0 +1,178 @@
+/* Start of CSS Reset, credit to Andy Bell "A (more) modern CSS Reset",
+Link: https://piccalil.li/blog/a-more-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End of CSS Reset */
+
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/INter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+  display: grid;
+  place-items: center;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.container {
+  background-color: hsl(0, 0%, 12%);
+  margin: 0 1rem;
+  border-radius: 22px;
+}
+
+main {
+  margin: 1rem 2rem 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+img {
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  width: 75px;
+  height: 75px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+}
+
+.description {
+  margin: 1.5rem 2rem 0;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+li:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+a:not(:first-child) {
+  margin-top: 1rem;
+}
