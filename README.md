@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages]([https://your-live-site-url.com)](https://marcuscs00.github.io/fem-social-links-profile/
+)
 
 ## My process
 
